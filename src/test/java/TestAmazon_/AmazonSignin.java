@@ -15,16 +15,16 @@ import java.util.Scanner;
 
 public class AmazonSignin extends BaseTest{
 
-    WebDriver driver;
-    WebDriverWait wait;
+  //  WebDriver driver;
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-    @BeforeClass
-    public void setUp() {
-        driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().window().maximize();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+//    @BeforeClass
+//    public void setUp() {
+//        driver = new FirefoxDriver();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.manage().window().maximize();
+//        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//    }
 
     @Test
     public void signInToAmazon() throws InterruptedException {
@@ -33,9 +33,13 @@ public class AmazonSignin extends BaseTest{
         WebElement accountLists = driver.findElement(By.id("nav-link-accountList"));
         Actions actions = new Actions(driver);
         actions.moveToElement(accountLists).perform();
+        
+        
+        
+        driver.findElement(By.id("nav-link-accountList-nav-line-1")).click();
 
-        WebElement signInLink = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nav-flyout-ya-signin a")));
-        signInLink.click();
+//        WebElement signInLink = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("#nav-flyout-ya-signin a")));
+//        signInLink.click();
         
         //Thread.sleep(5000);
         
@@ -54,8 +58,8 @@ public class AmazonSignin extends BaseTest{
 //        driver.findElement(By.id("cvf-submit-otp-button-announce")).click();
     }
 
-    @AfterClass
-    public void tearDown() {
-       driver.quit();
-    }
+//    @AfterClass
+//    public void tearDown() {
+//       driver.quit();
+//    }
 }

@@ -14,15 +14,15 @@ import java.util.ArrayList;
 
 public class AmazonTestSearch extends BaseTest {
 
-    WebDriver driver;
-    WebDriverWait wait;
+    //WebDriver driver;
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));;
 
-    @BeforeClass
-    public void setUp() {
-        driver = new FirefoxDriver();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        driver.manage().window().maximize();
-    }
+//    @BeforeClass
+//    public void setUp() {
+//        driver = new FirefoxDriver();
+//        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+//        driver.manage().window().maximize();
+//    }
 
     @Test
     public void searchAndAddToCartAndBuy() {
@@ -30,8 +30,9 @@ public class AmazonTestSearch extends BaseTest {
 
         
         // Search for product
-        WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));
-        searchBox.sendKeys("Laptop");
+//        WebElement searchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("twotabsearchtextbox")));
+//        searchBox.sendKeys("Laptop");
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Laptop");
         driver.findElement(By.id("nav-search-submit-button")).click();
 
         // Click first product in results
