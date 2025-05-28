@@ -48,7 +48,7 @@ public class AmazonSignin extends BaseTest {
         }
 
         // Add to cart
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[15]/div/div/div/div[1]/div[2]/div[1]/div[2]/div/form/div[6]/span/span/input")).click();
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[15]/div/div/div/div[1]/div[2]/div/div[2]/div/form/div[5]/span/span/input")).click();
 
         // Optional: navigate to cart
         wait.until(ExpectedConditions.elementToBeClickable(By.id("nav-cart"))).click();

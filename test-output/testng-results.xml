@@ -1,25 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-28T11:46:38 IST" name="Default suite" finished-at="2025-05-28T11:47:18 IST" duration-ms="39581">
+  <suite started-at="2025-05-28T14:49:48 IST" name="Default suite" finished-at="2025-05-28T14:51:12 IST" duration-ms="84116">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-05-28T11:46:38 IST" name="Default test" finished-at="2025-05-28T11:47:18 IST" duration-ms="39581">
-      <class name="TestAmazon_.AmazonSignin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestAmazon_.AmazonSignin@14028087]" started-at="2025-05-28T11:46:38 IST" name="setUp" finished-at="2025-05-28T11:46:42 IST" duration-ms="3608" status="PASS">
+    <test started-at="2025-05-28T14:49:48 IST" name="Default test" finished-at="2025-05-28T14:51:12 IST" duration-ms="84116">
+      <class name="com.TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:49:48 IST" name="setUpClass" finished-at="2025-05-28T14:49:49 IST" duration-ms="580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@625a4ff]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="signInAndAddToCart()[pri:0, instance:TestAmazon_.AmazonSignin@14028087]" started-at="2025-05-28T11:46:42 IST" name="signInAndAddToCart" finished-at="2025-05-28T11:47:18 IST" duration-ms="35906" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:49:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-28T14:50:28 IST" duration-ms="39204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Register on Amazon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon User Journey"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInAndAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestAmazon_.AmazonSignin@14028087]" started-at="2025-05-28T11:47:18 IST" name="tearDown" finished-at="2025-05-28T11:47:18 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:50:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-28T14:50:50 IST" duration-ms="22005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sign in to Amazon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon User Journey"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- TestAmazon_.AmazonSignin -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:50:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-28T14:51:12 IST" duration-ms="22222" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search product and buy"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon User Journey"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type='s-search-result'] h2 a (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29327, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1e72a91c-b209-487b-9e0c-782cc607527c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type='s-search-result'] h2 a (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29327, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1e72a91c-b209-487b-9e0c-782cc607527c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.TestAmazonCucumber.AmazonSteps.i_add_first_product_to_cart(AmazonSteps.java:83)
+at ✽.I add the first product to the cart(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Amazon.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:51:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-28T14:51:12 IST" duration-ms="18" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User registers on Amazon"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon Registration"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at com.TestAmazonCucumber.RegisterSteps.iNavigateToAmazonRegistrationPage(RegisterSteps.java:14)
+at ✽.I navigate to Amazon registration page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Register.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:51:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-05-28T14:51:12 IST" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sign in and add a laptop to the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Amazon Sign In and Add to Cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/signin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.1.1', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/signin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+at com.TestAmazonCucumber.SignInSteps.iNavigateToAmazonSignInPage(SignInSteps.java:24)
+at ✽.I navigate to Amazon sign-in page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Signin.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.TestRunner.TestRunner@31ea9581]" started-at="2025-05-28T14:51:12 IST" name="tearDownClass" finished-at="2025-05-28T14:51:12 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.TestRunner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

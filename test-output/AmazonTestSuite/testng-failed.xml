@@ -5,11 +5,18 @@
     <classes>
       <class name="TestAmazon_.AmazonTestSearch">
         <methods>
-          <include name="searchAndAddToCartAndBuy"/>
-          <include name="setUp"/>
+          <include name="searchAddToCartAndBuyNow"/>
+          <include name="setup"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestAmazon_.AmazonTestSearch -->
+      <class name="TestAmazon_.AmazonSignin">
+        <methods>
+          <include name="signInToAmazon"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestAmazon_.AmazonSignin -->
     </classes>
   </test> <!-- AmazonFullFlow(failed) -->
 </suite> <!-- Failed suite [AmazonTestSuite] -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search product and buy&quot;, &quot;Amazon User Journey&quot;)">runScenario("Search product and buy", "Amazon User Journey")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User registers on Amazon&quot;, &quot;Amazon Registration&quot;)">runScenario("User registers on Amazon", "Amazon Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Sign in and add a laptop to the cart&quot;, &quot;Amazon Sign In and Add to Cart&quot;)">runScenario("Sign in and add a laptop to the cart", "Amazon Sign In and Add to Cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +127,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestAmazon_.AmazonSignin" class="method navigator-link" hash-for-method="signInAndAddToCart">signInAndAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register on Amazon&quot;, &quot;Amazon User Journey&quot;)">runScenario("Register on Amazon", "Amazon User Journey")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Sign in to Amazon&quot;, &quot;Amazon User Journey&quot;)">runScenario("Sign in to Amazon", "Amazon User Journey")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -118,17 +147,110 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestAmazon_.AmazonSignin</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.TestRunner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signInAndAddToCart">
-                  </a> <!-- signInAndAddToCart -->
-                  <span class="method-name">signInAndAddToCart</span>
+                  <a name="runScenario(&quot;Search product and buy&quot;, &quot;Amazon User Journey&quot;)">
+                  </a> <!-- runScenario("Search product and buy", "Amazon User Journey") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search product and buy","Amazon User Journey")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type=&apos;s-search-result&apos;] h2 a (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29327, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1e72a91c-b209-487b-9e0c-782cc607527c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.TestAmazonCucumber.AmazonSteps.i_add_first_product_to_cart(AmazonSteps.java:83)
+	at ✽.I add the first product to the cart(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Amazon.feature:16)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User registers on Amazon&quot;, &quot;Amazon Registration&quot;)">
+                  </a> <!-- runScenario("User registers on Amazon", "Amazon Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User registers on Amazon","Amazon Registration")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.RegisterSteps.iNavigateToAmazonRegistrationPage(RegisterSteps.java:14)
+	at ✽.I navigate to Amazon registration page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Register.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign in and add a laptop to the cart&quot;, &quot;Amazon Sign In and Add to Cart&quot;)">
+                  </a> <!-- runScenario("Sign in and add a laptop to the cart", "Amazon Sign In and Add to Cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign in and add a laptop to the cart","Amazon Sign In and Add to Cart")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/signin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.SignInSteps.iNavigateToAmazonSignInPage(SignInSteps.java:24)
+	at ✽.I navigate to Amazon sign-in page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Signin.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.TestRunner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register on Amazon&quot;, &quot;Amazon User Journey&quot;)">
+                  </a> <!-- runScenario("Register on Amazon", "Amazon User Journey") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register on Amazon","Amazon User Journey")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Sign in to Amazon&quot;, &quot;Amazon User Journey&quot;)">
+                  </a> <!-- runScenario("Sign in to Amazon", "Amazon User Journey") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Sign in to Amazon","Amazon User Journey")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +258,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/lw/lgsh4j555hgf9chvgmpp4xyc0000gn/T/testng-eclipse-893751377/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/lw/lgsh4j555hgf9chvgmpp4xyc0000gn/T/testng-eclipse--1000418209/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +267,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestAmazon_.AmazonSignin&quot;/&gt;
+      &lt;class name=&quot;com.TestRunner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -169,6 +291,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -185,16 +315,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signInAndAddToCart')
-data.setCell(0, 2, 'TestAmazon_.AmazonSignin')
-data.setCell(0, 3, 35906);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.TestRunner.TestRunner')
+data.setCell(0, 3, 39204);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.TestRunner.TestRunner')
+data.setCell(1, 3, 22222);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.TestRunner.TestRunner')
+data.setCell(2, 3, 22005);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.TestRunner.TestRunner')
+data.setCell(3, 3, 18);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.TestRunner.TestRunner')
+data.setCell(4, 3, 6);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,18 +366,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestAmazon_.AmazonSignin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TestRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@625a4ff)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">signInAndAddToCart</span>
-                <span class="method-start">3631 ms</span>
+                <span class="method-name">runScenario("Register on Amazon", "Amazon User Journey")</span>
+                <span class="method-start">592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Sign in to Amazon", "Amazon User Journey")</span>
+                <span class="method-start">39800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search product and buy", "Amazon User Journey")</span>
+                <span class="method-start">61810 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("User registers on Amazon", "Amazon Registration")</span>
+                <span class="method-start">84039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Sign in and add a laptop to the cart", "Amazon Sign In and Add to Cart")</span>
+                <span class="method-start">84059 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">39548 ms</span>
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">84069 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

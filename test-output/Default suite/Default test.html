@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 27 15:00:24 IST 2025</td>
+<td>Started on:</td><td>Wed May 28 14:49:48 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7585 ms)</td>
+<tr><td>Total time:</td><td>84 seconds (84116 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,81 +76,114 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestAmazon_.AmazonTestSearch.searchAndAddToCartAndBuy()'><b>searchAndAddToCartAndBuy</b><br>Test class: TestAmazon_.AmazonTestSearch</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;driver&quot; is null
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at TestAmazon_.AmazonTestSearch.searchAndAddToCartAndBuy(AmazonTestSearch.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1428494531", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1428494531'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;driver&quot; is null
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at TestAmazon_.AmazonTestSearch.searchAndAddToCartAndBuy(AmazonTestSearch.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search product and buy", "Amazon User Journey"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type=&apos;s-search-result&apos;] h2 a (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29327, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1e72a91c-b209-487b-9e0c-782cc607527c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.TestAmazonCucumber.AmazonSteps.i_add_first_product_to_cart(AmazonSteps.java:83)
+	at ✽.I add the first product to the cart(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Amazon.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace317053574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace317053574'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div.s-main-slot div[data-component-type=&apos;s-search-result&apos;] h2 a (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29327, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+Session ID: 1e72a91c-b209-487b-9e0c-782cc607527c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.TestAmazonCucumber.AmazonSteps.i_add_first_product_to_cart(AmazonSteps.java:83)
+	at ✽.I add the first product to the cart(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Amazon.feature:16)
 </pre></div></td>
-<td>3</td>
-<td>TestAmazon_.AmazonTestSearch@7ce026d3</td></tr>
+<td>22</td>
+<td>com.TestRunner.TestRunner@31ea9581</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User registers on Amazon", "Amazon Registration"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.RegisterSteps.iNavigateToAmazonRegistrationPage(RegisterSteps.java:14)
+	at ✽.I navigate to Amazon registration page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Register.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace135002781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace135002781'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/register}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.RegisterSteps.iNavigateToAmazonRegistrationPage(RegisterSteps.java:14)
+	at ✽.I navigate to Amazon registration page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Register.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>com.TestRunner.TestRunner@31ea9581</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in and add a laptop to the cart", "Amazon Sign In and Add to Cart"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/signin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.SignInSteps.iNavigateToAmazonSignInPage(SignInSteps.java:24)
+	at ✽.I navigate to Amazon sign-in page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Signin.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1350395050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1350395050'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.1.1&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, get {url=https://www.amazon.in/ap/signin}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 138.0.4, moz:accessibilityChecks: false, moz:buildID: 20250517143237, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 24.1.0, moz:processID: 29139, moz:profile: /var/folders/lw/lgsh4j555hg..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Macintosh; Int...}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:176)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at com.TestAmazonCucumber.SignInSteps.iNavigateToAmazonSignInPage(SignInSteps.java:24)
+	at ✽.I navigate to Amazon sign-in page(file:///Users/punya.jain/Documents/Java%20Project/TestingAmazon/Feature%20File/Signin.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>com.TestRunner.TestRunner@31ea9581</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register on Amazon", "Amazon User Journey"</td>
+<td></td>
+<td>39</td>
+<td>com.TestRunner.TestRunner@31ea9581</td></tr>
+<tr>
+<td title='com.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in to Amazon", "Amazon User Journey"</td>
+<td></td>
+<td>22</td>
+<td>com.TestRunner.TestRunner@31ea9581</td></tr>
 </table><p>
 </body>
 </html>

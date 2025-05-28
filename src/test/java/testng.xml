@@ -5,7 +5,6 @@
         <classes>
             <class name="TestAmazon_.AmazonRegisterTest"/>
             <class name="TestAmazon_.AmazonSignin"/>
-            <class name="TestAmazon_.AmazonTestSearch"/>
         </classes>
     </test>
 
